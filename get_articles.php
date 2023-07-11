@@ -9,7 +9,7 @@ if ($result->num_rows > 0) {
         echo '<tr>';
         echo '<td >' . $row['title'] . '</td>';
         echo '<td >' . $row['content'] . '</td>';
-        echo '<td class="w-75">' . $row['file'] . '</td>';
+        echo '<td class="w-75"><a href="https://crudphpjorge.000webhostapp.com/uploads/' . $row['file'] . '"> <button class="btn btn-success ">' . $row['file'] . '</button> </a> </td>';
         echo '<td class="w-75">';
         echo '<button class="btn btn-primary editBtn" data-id="' . $row['id'] . '">Editar</button> ';
         echo '<button class="btn btn-danger deleteBtn" data-id="' . $row['id'] . '">Eliminar</button>';
@@ -22,3 +22,4 @@ if ($result->num_rows > 0) {
 
 $conn->close();
 ?>
+//https://crudphpjorge.000webhostapp.com/uploads/
