@@ -12,8 +12,8 @@
         <div id="message"></div>
 
         <button class="btn btn-success mb-3" data-toggle="modal" data-target="#addArticleModal">Agregar Artículo</button>
-
-        <table id="table">
+    <div style="overflow-x:auto;">
+        <table id="customers">
             <thead >
             <tr >
                     <th>Título</th>
@@ -24,6 +24,7 @@
             </thead>
             <tbody id="articlesList"></tbody>
         </table>
+    </div>
     </div>
 
     <!-- Modal para agregar artículo -->
